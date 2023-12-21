@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alanya Vision Teenagers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+      .content, .join-us, .schedule {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1a1a1a; /* Consistent Dark Background */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Lighter Shadow */
+  text-align: left; /* Left align text within the section */
+}
+
+
+   .stay { text-align:center
+ 
+}
+
+
+/* Center align the titles within these sections */
+.content h2, .join-us h2, .schedule h2 {
+  text-align: center;
+}
+
+
+/* ... rest of your styles ... */
+      /* Slider styling */
+      .theme-switch {
+          position:fixed;
+          top:5px;
+          right:5px;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+      }
+
+
+      .theme-switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+      }
+
+
+      .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          transition: .4s;
+      }
+
+
+      .slider:before {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          transition: .4s;
+      }
+
+
+      input:checked + .slider {
+
+
+          background-color: #222;
+      }
+
+
+      input:checked + .slider:before {
+          transform: translateX(26px);
+      }
+
+
+      .slider.round {
+          border-radius: 34px;
+      }
+
+
+      .slider.round:before {
+          border-radius: 50%;
+      }
+
+
+      /* Dark theme styles (default) */
+      body {
+          font-family: 'Nunito', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #000000; /* Dark Background */
+          color: #ffffff; /* White Text */
+      }
+
+
+      .header, .footer {
+          background-color: #010101; /* Slightly Lighter Dark Background */
+          color: #ffffff; /* White Text */
+          text-align: center;
+          padding: 1em 0;
+      }
+
+
+      .content, .join-us, .schedule, h2 {
+          background-color: #1a1a1a; /* Consistent Dark Background */
+          color: #ffffff; /* White Text */
+          text-align: left; /* Left-align text */
+      }
+
+
+      h2 {
+          text-align: center; /* Center-align h2 headings */
+      }
+
+
+      a, a:visited {
+          color: #ffffff; /* White Links */
+          text-decoration: none;
+      }
+
+
+      .button {
+          display: inline-block;
+          padding: 10px 20px;
+          margin: 10px 0;
+          font-size: 18px;
+          background-color: #333; /* Dark Button Background */
+          color: #ffffff; /* White Text */
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+          text-align: center;
+      }
+
+
+      .button:hover {
+          background-color: #000000; /* Lighter Dark Background on Hover */
+      }
+
+
+      ul {
+          padding-left: 20px;
+      }
+
+
+      li {
+          margin-bottom: 10px;
+      }
+      .button-container {
+  display: flex;
+  justify-content: center; /* Aligns items horizontally at the center */
+  align-items: center; /* Aligns items vertically at the center */
+  flex-wrap: nowrap; /* Prevents wrapping, keeping buttons side by side */
+}
+
+
+      .button-2 {
+          display: inline-block;
+          padding: 10px 20px;
+          margin: 10px;
+          font-size: 18px;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #333;
+          border: none;
+          border-radius: 5px;
+          align-self: center;
+          transition:0.3s;
+       }
+      .button-2:hover{
+          background-color:#000000;
+      }
+
+
+      /* Light theme styles */
+      body.light-theme {
+          background-color: #ffffff; /* Light Background */
+          color: #000000; /* Black Text */
+          background-image: url('sphere.png');  
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
+
+      }
+
+
+      body.light-theme .header,
+      body.light-theme .footer,
+      body.light-theme .content,
+      body.light-theme .join-us,
+      body.light-theme .schedule,
+      body.light-theme h2 {
+          background-color: #ffffff00; /* Light Background */
+          color: #000000; /* Black Text */
+      }
+
+
+      body.light-theme .schedule,
+      body.light-theme .content,
+      body.light-theme .join-us {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Dark Shadow */
+      }
+
+
+     
+  </style>
+</head>
+<body>
+  <div class="header">
+      <h1>Alanya Vision Teenagers</h1>
+  </div>
+
+
+  <label class="theme-switch">
+      <input type="checkbox" id="theme-toggle" />
+      <div class="slider round"></div>
+  </label>
+
+
+  <div class="content">
+      <h2>About Alanya Vision Teenagers</h2>
+      <p>
+       Alanya Vision is the place where young minds explore the realms of entrepreneurship and personal development. Our club is a vibrant community that fosters innovation and leadership among teens. We believe in turning ideas into action, providing a space where teenagers can learn business skills, network with peers, and engage in meaningful projects. Our approach combines practical business insights with personal growth activities, all in a supportive and dynamic environment.
+       </p>
+     
+      <p>Alanya Vision - это место, где молодые умы изучают предпринимательство и личностное развитие. Наш клуб является живым сообществом, которое способствует развитию инноваций и лидерских качеств среди подростков. Мы верим в реализацию идей на практике, предоставляя пространство, где подростки могут изучать бизнес-навыки, общаться с единомышленниками и участвовать в значимых проектах. Наш подход сочетает практические бизнес-знания с деятельностью по личностному росту, всё это в поддерживающей и динамичной среде.</p>
+     
+     
+      <p> Alanya Vision, genç zihinlerin girişimcilik ve kişisel gelişim alanlarını keşfettiği bir yerdir. kurulan kulübümüz, gençler arasında yenilikçiliği ve liderliği teşvik eden canlı bir topluluktur. Fikirleri eyleme dönüştürmeye inanıyoruz ve gençlerin iş becerileri öğrenebileceği, akranlarıyla ağ kurabileceği ve anlamlı projelerde yer alabileceği bir alan sağlıyoruz. Yaklaşımımız, pratik iş içgörüleri ile kişisel gelişim faaliyetlerini destekleyici ve dinamik bir ortamda birleştiriyor.
+   </p>
+   <h2> Our guest Speakers/Наши гостевые докладчики/Konuk Konuşmacılarımız</h2>
+      <ul>
+          <li>Olga Guzman, London Business school graduate, formed Investment banker at Goldman Sachs.</li>
+          <li>Sergei Odinets, INSEAD business school graduate, GM of Servify.</li>
+          <li>Michael Utchitel, Senior investor at Goldman Sachs, founder of Taya Jeans</li>
+      </ul>
+      <p>Join us at Alanya Vision Teenagers and embark on a journey of personal growth and discovery. Open the door to a world of possibilities!</p>
+  </div>
+
+
+  <div class="join-us">
+      <h2>Join Us</h2>
+      <div class="button-container">
+       <a href="https://t.me/AlanyaVision" class="button">Join as a parent</a>
+      <a href="https://t.me/AlvTeenagers" class="button-2">Join as a teenager</a>
+  </div>
+
+
+  <div class="schedule">
+      <h2>Meeting Schedule</h2>
+      <p class="stay">Stay tuned for our upcoming meetings and events. Join us to learn, share, and grow together.</p>
+  </div>
+  <script>
+      document.addEventListener('DOMContentLoaded', function (){
+        const savedScheme = localStorage.getItem('colorScheme');
+        //alert ("Last scheme"+savedScheme);
+        //document.body.classList.toggle('light-theme', savedScheme);
+        if (savedScheme=="light") {
+            document.getElementById('theme-toggle').checked=true;
+            document.body.classList.toggle('light-theme', true);
+        }
+      });
+      document.getElementById('theme-toggle').addEventListener('change', function() {
+          document.body.classList.toggle('light-theme', this.checked);
+          //alert ((this.checked)?"light":"dark");
+          localStorage.setItem('colorScheme', (this.checked)?"light":"dark"); // Save the choice in localStorage
+      });
+  </script>
+</body>
+</html>
+
+
+
+
